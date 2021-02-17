@@ -38,7 +38,7 @@ pipeline
                 withDockerRegistry(credentialsId: '4c0c0f02-76fc-4468-8bac-dac2c947c918') {
                 sh "docker push sameed00786/tomcat_war:newtag"
                 }
-	        }
+	    }
         }
     }
 }
