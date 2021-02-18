@@ -35,7 +35,7 @@ pipeline
 	            sh "docker version"
 	            sh "cd /opt/docker; docker build  -t sameed00786/tomcat_war:newtag -f Dockerfile ."
 	            sh "docker run -p 8090:8080 -d sameed00786/tomcat_war:newtag"
-                withDockerRegistry(credentialsId: '0de378f2-49bd-403f-9e94-367882076ea0', url: 'https://hub.docker.com/u/sameed00786') {
+                //withDockerRegistry(credentialsId: '0de378f2-49bd-403f-9e94-367882076ea0', url: 'https://hub.docker.com/u/sameed00786') {
                 //sh "docker push sameed00786/tomcat_war:newtag"
                 }
 	    }
